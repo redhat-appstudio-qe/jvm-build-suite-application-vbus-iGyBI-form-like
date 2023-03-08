@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-sipa
+  namespace: jvm-build-khef-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e43024605b0ea632f5b25a43c50d4ca7d0530dff66bbdb240e55b4f8b6e75be4
+        name: container-image
+        resources: {}
+status: {}
