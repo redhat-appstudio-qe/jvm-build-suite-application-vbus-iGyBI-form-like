@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-sipa
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:12d418e626a84e3aaa3513d688400c65
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e43024605b0ea632f5b25a43c50d4ca7d0530dff66bbdb240e55b4f8b6e75be4
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
